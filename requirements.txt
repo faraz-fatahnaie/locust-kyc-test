@@ -1,2 +1,3 @@
-locust
+locust~=2.25.0
 json
+python-dotenv~=1.0.1
