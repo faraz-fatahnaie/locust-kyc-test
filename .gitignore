@@ -1,3 +1,4 @@
 .idea
 **/__pycache__/
 /test_stats/*
+!/test_stats/__init__.py
