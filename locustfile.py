@@ -158,7 +158,7 @@ class KnowMeSequenceOfTasks(SequentialTaskSet):
 
 
 class LoggedInUser(HttpUser):
-    host = "https://api.face-kyc.ir"
+    # host = "http://api.know-me.ir"
     # host = "http://localhost"
     # wait_time = between(4, 5)
     tasks = [KnowMeSequenceOfTasks]
