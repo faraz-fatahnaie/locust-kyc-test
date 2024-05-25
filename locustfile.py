@@ -117,10 +117,10 @@ class KnowMeSequenceOfTasks(SequentialTaskSet):
             validation_token = self.user_data.get('validation_token')
 
             url_post = '/sessions/vamr/?timeout=30'
-            headers_post = {'Content-Type': 'application/json'}
+            headers_post = {'Content-Type': 'application/json',
+                            'PRIVATE-KEY': self.private_key}
             data_post = {
-                "validation_token": validation_token,
-                "private_key": self.private_key
+                "validation_token": validation_token
             }
 
             result_response = self.client.post(url_post, headers=headers_post, data=json.dumps(data_post))
